@@ -7,6 +7,11 @@
     <groupId>com.droutine.project</groupId>
     <artifactId>ping-manager</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <build>
+        <finalName>ping-manager</finalName>
+    </build>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
