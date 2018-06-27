@@ -5,18 +5,11 @@ import com.model.PingAnalyticRequest;
 import com.model.PingAnalyticResponse;
 import com.model.Request;
 import com.model.Response;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/request")
 public class RequestHandler {
-
-    @GetMapping("/")
-    String home() {
-        return "INFO: Welcome to Ping-manager!";
-    }
 
     @PostMapping("/process")
     Response handleRequest(@RequestBody Request request) {
