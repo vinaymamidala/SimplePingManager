@@ -31,7 +31,7 @@
                 <configuration>
                     <imageName>${project.build.finalName}</imageName>
                     <imageTags>latest</imageTags>
-                    <dockerDirectory>docker/deploy</dockerDirectory>
+                    <dockerDirectory>deploy/docker/</dockerDirectory>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>

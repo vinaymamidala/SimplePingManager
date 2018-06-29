@@ -5,14 +5,25 @@ import com.model.PingAnalyticRequest;
 import com.model.PingAnalyticResponse;
 import com.model.Request;
 import com.model.Response;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
-@RequestMapping("/request")
+@RequestMapping("/rest")
 public class RequestHandler {
 
+    private final static UUID SYSTEM_ID = UUID.randomUUID();
+
+    @GetMapping("/")
+    public String healthCheck() {
+        return "Ping-manager - Welcome to RestWorld!!!";
+    }
+
     @PostMapping("/process")
-    Response handleRequest(@RequestBody Request request) {
+    public Response handleRequest(@RequestBody Request request) {
 
         Response response = new Response();
 
@@ -30,6 +41,7 @@ public class RequestHandler {
                 PingManager pingManager = new PingManager();
                 PingAnalyticResponse pingAnalyticResponse = pingManager.pingURL(pingAnalyticRequest);
 
+                response.setSysId(RequestHandler.SYSTEM_ID.toString());
                 response.setMessage("INFO: Request execute successfully.");
                 response.setError(false);
                 response.setPingAnalyticResponse(pingAnalyticResponse);
