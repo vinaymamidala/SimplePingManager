@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.droutine.project</groupId>
-    <artifactId>ping-manager</artifactId>
+    <artifactId>simple-ping-manager</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
     <build>
-        <finalName>ping-manager</finalName>
+        <finalName>simple-ping-manager</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
