@@ -7,7 +7,7 @@ This is the Ping Manager Service.
 ## Building
 
 First ensure your development environment is up-to-date. You will need to
-install gradle 3.3+ on macOS, Linux and Windows.
+install gradle 3.3+ on macOS, Linux.
 
 Next clone this repository and run make:
 
