@@ -2,7 +2,8 @@
 
 ## Introduction
 
-This is the Ping Manager Service.
+This is the Ping Manager Service. A small project that can help to health-check of any URL.
+Just enter your URL and IP address and wait for the response.
 
 ## Building
 
