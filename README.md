@@ -1,8 +1,8 @@
-# Ping Manager
+# SimplePingManager 
 
 ## Introduction
 
-This is the Ping Manager Service. A small project that can help to health-check of any URL.
+This is the Simple Ping Manager Service. A small project that can help to health-check of any URL.
 Just enter your URL and IP address and wait for the response.
 
 ## Building
