@@ -1,4 +1,4 @@
-package com.model;
+package com.mishah.model;
 
 public class PingAnalyticResponse {
 

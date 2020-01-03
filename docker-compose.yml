@@ -1,0 +1,8 @@
+version: '3'
+services:
+  simple-ping-manager:
+    image: mishalshah92/simple-ping-manager
+    build:
+      context: .
+    ports:
+      - "8080"

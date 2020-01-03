@@ -1,8 +1,4 @@
-package com.model;
-
-import org.apache.commons.lang3.SystemUtils;
-
-import java.util.UUID;
+package com.mishah.model;
 
 public class Response {
 

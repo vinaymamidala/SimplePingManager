@@ -1,12 +1,10 @@
-package com.controller;
+package com.mishah.controller;
 
-import com.logic.PingManager;
-import com.model.PingAnalyticRequest;
-import com.model.PingAnalyticResponse;
-import com.model.Request;
-import com.model.Response;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.stereotype.Controller;
+import com.mishah.logic.PingManager;
+import com.mishah.model.PingAnalyticRequest;
+import com.mishah.model.PingAnalyticResponse;
+import com.mishah.model.Request;
+import com.mishah.model.Response;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
