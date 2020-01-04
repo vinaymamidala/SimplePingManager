@@ -26,7 +26,7 @@ This target publish the docker image to [DockerHub](https://hub.docker.com/repos
 
 ## Run
 
-To run the JAR file generated on path <build/libs/SimplePingManager.jar>
+To run the JAR file generated on path `build/libs/SimplePingManager.jar`
 
 ```shell script
 $ java -jar simple-ping-manager.jar
