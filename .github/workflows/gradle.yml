@@ -23,6 +23,4 @@ jobs:
           password: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
       - name: publish
         if: github.ref == 'refs/heads/master'
-        run: |
-          make publish
-
+        run: make publish
