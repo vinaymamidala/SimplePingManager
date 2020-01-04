@@ -12,7 +12,7 @@ Just enter your URL and IP address and wait for the response.
 First ensure your development environment is up-to-date. You will need to install gradle 6.0+ on macOS, Linux.
 
 ```shell script
-    $ make [Target]
+$ make [Target]
 ```
 
 - `$ make build`
@@ -29,22 +29,27 @@ This target publish the docker image to [DockerHub](https://hub.docker.com/repos
 To run the JAR file generated on path <build/libs/SimplePingManager.jar>
 
 ```shell script
-    java -jar simple-ping-manager.jar
+$ java -jar simple-ping-manager.jar
 ``` 
 
 To run the docker image
 
 ```shell script
-    docker run -p 8080:8080 mishalshah92/simple-ping-manager:latest
+$ docker run -p 8080:8080 mishalshah92/simple-ping-manager:latest
 ``` 
 
 Access application on
 
 ```shell script
-    http://localhost:8080/
+$ http://localhost:8080/
 ``` 
 
 ## Artifacts
 
 - **Docker Image**: <https://hub.docker.com/repository/docker/mishalshah92/simple-ping-manager>
 
+
+## Overview
+
+- **Build Pipeline**: <https://github.com/mishalshah92/SimplePingManager/actions>
+- **Maintainer**: mishalshah92@gmail.com
