@@ -1,6 +1,6 @@
-package com.model;
+package com.mishah.model;
 
-public class Request {
+public class PingAnalyticRequest {
 
     private String url;
 
@@ -11,4 +11,5 @@ public class Request {
     public void setUrl(String url) {
         this.url = url;
     }
+
 }

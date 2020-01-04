@@ -1,12 +1,11 @@
-package com.logic;
+package com.mishah.logic;
 
-import com.model.PingAnalyticRequest;
-import com.model.PingAnalyticResponse;
+import com.mishah.model.PingAnalyticRequest;
+import com.mishah.model.PingAnalyticResponse;
 import org.apache.commons.lang3.SystemUtils;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.UUID;
 
 public class PingManager {
 
