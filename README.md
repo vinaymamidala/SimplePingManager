@@ -46,7 +46,7 @@ $ http://localhost:8080/
 
 ## Artifacts
 
-- **Docker Image**: <https://hub.docker.com/repository/docker/mishalshah92/simple-ping-manager>
+- **Docker Image**: <https://hub.docker.com/r/mishalshah92/simple-ping-manager>
 
 
 ## Overview
