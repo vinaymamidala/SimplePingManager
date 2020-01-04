@@ -21,7 +21,7 @@ This target compile the java project and build the docker image.
     
 - `$ make publish`
 
-This target publish the docker image to [DockerHub](https://hub.docker.com/repository/docker/mishalshah92/simple-ping-manager)
+This target publish the docker image to [DockerHub](https://hub.docker.com/r/mishalshah92/simple-ping-manager)
 
 
 ## Run
