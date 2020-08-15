@@ -1,0 +1,6 @@
+#cloud-config
+write_files:
+  - encoding: b64
+    content: ${docker_compose_file_base64_content}
+    path: ${docker_compose_file_path}
+    permissions: '0644'

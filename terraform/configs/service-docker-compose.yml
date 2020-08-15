@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  dynamic_demand:
+    image: mishalshah92/simple-ping-manager:${tag}
+    ports:
+      - "${port}:8080"
