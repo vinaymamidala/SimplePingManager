@@ -24,6 +24,21 @@ This target compile the java project and build the docker image.
 This target publish the docker image to [DockerHub](https://hub.docker.com/r/mishalshah92/simple-ping-manager)
 
 
+## Deploy
+
+- To deploy the service, please configure the variables [here](terraform/service.tf) and [here](terraform/service_variables.tf)
+- Make sure you configure the proper terraform backend [here](terraform/main.tf)
+
+```shell script
+$ make apply
+``` 
+
+To delete the service
+
+```shell script
+$ make destroy
+``` 
+
 ## Run
 
 To run the JAR file generated on path `build/libs/SimplePingManager.jar`
