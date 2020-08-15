@@ -2,12 +2,12 @@
 
 variable "region" {
   type    = string
-  default = "ap-south-1"
+  default = "us-east-1"
 }
 
 variable "route_53_zone" {
   type    = string
-  default = "aws.ms92.in"
+  default = "aws.easyaws.in"
 }
 
 variable "private_deploy" {
@@ -36,7 +36,7 @@ variable "app_ami_id" {
 
 variable "owner" {
   type    = string
-  default = "mishah92"
+  default = "easyaws"
 }
 
 variable "env" {

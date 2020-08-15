@@ -2,10 +2,10 @@ terraform {
   required_version = "> 0.12"
 
   backend "s3" {
-    bucket         = "ms92-tf-states"
-    dynamodb_table = "ms92-tf-states"
+    bucket         = "easyaws-terraform-state"
+    dynamodb_table = "easyaws-terraform-state"
     key            = "terraform-ec2-service-module/test/terraform.tfstate"
-    region         = "ap-south-1"
+    region         = "us-east-1"
     encrypt        = true
   }
 }
