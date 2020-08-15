@@ -31,4 +31,4 @@ destroy: validate
 
 clean:
 	rm -rf .terraform/ || true
-	rm plan.out  || true
+	rm *.tfplan  || true
