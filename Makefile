@@ -21,13 +21,13 @@ validate: init
 	terraform validate $(MODULE)
 
 plan: validate
-	terraform plan -state=$(MODULE)/terraform.tfstate -var 'git_commit=$(COMMIT)' -out=$(COMMIT).tfplan $(MODULE)
+	terraform plan -var 'git_commit=$(COMMIT)' -out=$(COMMIT).tfplan $(MODULE)
 
 deploy: plan
-	terraform apply -state=$(MODULE)/terraform.tfstate --auto-approve $(COMMIT).tfplan
+	terraform apply --auto-approve $(COMMIT).tfplan
 
 destroy: validate
-	terraform destroy -state=$(MODULE)/terraform.tfstat -var 'git_commit=$(COMMIT)' --auto-approve $(MODULE)
+	terraform destroy -var 'git_commit=$(COMMIT)' --auto-approve $(MODULE)
 
 clean:
 	rm -rf .terraform/ || true
