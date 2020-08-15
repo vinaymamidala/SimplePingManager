@@ -4,6 +4,7 @@ COMMIT:=$(DATE)-$(REV)
 IMAGE_NAME:=mishalshah92/simple-ping-manager
 MODULE:=terraform
 
+.PHONY: clean build publish init validate plan deploy
 
 build:
 	./gradlew clean build
