@@ -6,8 +6,7 @@ build/
 
 .idea/
 
-.terraform
-.terraform-version
+*/.terraform
 *.tfplan
 
 .gradle
