@@ -32,7 +32,7 @@ data "aws_iam_policy_document" "service" {
 }
 
 module "service" {
-  source = "git::https://github.com/mishah92/terraform-ec2-service-module.git//terraform"
+  source = "git::https://github.com/mishah92/terraform-ec2-microservice-module.git//terraform"
 
   # service
   service_docker_compose_content = data.template_file.service_docker_compose.rendered
