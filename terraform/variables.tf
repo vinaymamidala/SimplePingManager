@@ -29,7 +29,7 @@ variable "ec2_instance_type" {
 
 variable "app_ami_id" {
   type    = string
-  default = "ami-0ea112f12804606e2"
+  default = "ami-0b17d2af6c99a11da"
 }
 
 # tags
