@@ -1,7 +1,7 @@
 REV:=$(shell git rev-parse --short HEAD)
 DATE:=$(shell date +%Y.%m.%d-%H.%M.%S)
 COMMIT:=$(DATE)-$(REV)
-IMAGE_NAME:=mishalshah92/simple-ping-manager
+IMAGE_NAME:=easyaws/simple-ping-manager
 MODULE:=terraform
 
 
@@ -9,9 +9,12 @@ build:
 	./gradlew clean build
 
 publish:
-	docker push $(IMAGE_NAME):latest
-	docker tag $(IMAGE_NAME):latest $(IMAGE_NAME):$(REV)
-	docker push $(IMAGE_NAME):$(REV)
+	docker login easyaws-docker-local.jfrog.io
+	docker tag $(IMAGE_NAME):latest easyaws-docker-local.jfrog.io/$(IMAGE_NAME):$(REV)
+	docker push easyaws-docker-local.jfrog.io/$(IMAGE_NAME):$(REV)
+#	docker push $(IMAGE_NAME):latest
+#	docker tag $(IMAGE_NAME):latest $(IMAGE_NAME):$(REV)
+#	docker push $(IMAGE_NAME):$(REV)
 
 init:
 	terraform init $(MODULE)
